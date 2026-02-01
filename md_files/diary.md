@@ -1,4 +1,4 @@
-# {{PROBLEM}} Multi-Class Planned Design Recipe
+# DIARY Multi-Class Planned Design Recipe
 
 ## 1. Describe the Problem
 
