@@ -1,4 +1,4 @@
-from lib.vowel_remover import *
+from simple_tasks.lib.vowel_remover import *
 
 def test_simple():
     remover = VowelRemover("ab")
