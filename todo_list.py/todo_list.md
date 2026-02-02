@@ -37,25 +37,36 @@ focus on the details you see as important, not everything. The diagram below
 uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 
 ```
-┌────────────────────────────┐
-│ MusicPlayer                │
-│                            │
-│ - tracks                   │
-│ - add(track)               │
-│ - search_by_title(keyword) │
-│   => [tracks...]           │
-└───────────┬────────────────┘
-            │
-            │ owns a list of
-            ▼
-┌─────────────────────────┐
-│ Track(title, artist)    │
-│                         │
-│ - title                 │
-│ - artist                │
-│ - format()              │
-│   => "TITLE by ARTIST"  │
-└─────────────────────────┘
+┌──────────────────────────────────┐
+│ TodoList                         │
+│                                  │
+│ - todos                          │
+│                                  │
+│ - add(todo)                      │
+│   => nothing                     │
+│                                  │
+│ - incomplete()                   │
+│   => [Todo, Todo, ...]           │
+│                                  │
+│ - complete()                     │
+│   => [Todo, Todo, ...]           │
+│                                  │
+│ - give_up()                      │
+│   => nothing                     │
+└───────────────┬──────────────────┘
+                │
+                │ owns a list of
+                ▼
+┌────────────────────────────────┐
+│ Todo(task)                     │
+│                                │
+│ - task                         │
+│ - complete                     │
+│                                │
+│ - mark_complete()              │
+│   => nothing                   │
+└────────────────────────────────┘
+
 ```
 
 _Also design the interface of each class in more detail._
