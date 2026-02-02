@@ -1,5 +1,5 @@
-from test_drive_multi_class_program.lib.music_library import MusicLibrary
-from test_drive_multi_class_program.lib.track import Track
+from lib.music_library import MusicLibrary
+from lib.track import Track
 
 
 def test_music_library_integration():
@@ -11,4 +11,3 @@ def test_music_library_integration():
     assert library.search_by_title("Always") == [track_1]
 
 # ...
-
