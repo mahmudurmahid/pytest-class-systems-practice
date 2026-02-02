@@ -72,45 +72,56 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 _Also design the interface of each class in more detail._
 
 ```python
-class MusicLibrary:
-    # User-facing properties:
-    #   tracks: list of instances of Track
-
+class TodoList:
     def __init__(self):
-        pass # No code here yet
+        pass
 
-    def add(self, track):
+    def add(self, todo):
         # Parameters:
-        #   track: an instance of Track
-        # Side-effects:
-        #   Adds the track to the tracks property of the self object
-        pass # No code here yet
-
-    def search_by_title(self, keyword):
-        # Parameters:
-        #   keyword: string
+        #   todo: an instance of Todo
         # Returns:
-        #   A list of the Track objects that have titles that include the keyword
-        pass # No code here yet
-
-
-class Track:
-    # User-facing properties:
-    #   title: string
-    #   artist: string
-
-    def __init__(self, title, artist):
-        # Parameters:
-        #   title: string
-        #   artist: string
+        #   Nothing
         # Side-effects:
-        #   Sets the title and artist properties
-        pass # No code here yet
+        #   Adds the todo to the list of todos
+        pass
 
-    def format(self):
+    def incomplete(self):
         # Returns:
-        #   A string of the form "TITLE by ARTIST"
-        pass # No code here yet
+        #   A list of Todo instances representing the todos that are not complete
+        pass
+
+    def complete(self):
+        # Returns:
+        #   A list of Todo instances representing the todos that are complete
+        pass
+
+    def give_up(self):
+        # Returns:
+        #   Nothing
+        # Side-effects:
+        #   Marks all todos as complete
+        pass
+
+
+class Todo:
+    # Public Properties:
+    #   task: a string representing the task to be done
+    #   complete: a boolean representing whether the task is complete
+
+    def __init__(self, task):
+        # Parameters:
+        #   task: a string representing the task to be done
+        # Side-effects:
+        #   Sets the task property
+        #   Sets the complete property to False
+        pass
+
+    def mark_complete(self):
+        # Returns:
+        #   Nothing
+        # Side-effects:
+        #   Sets the complete property to True
+        pass
 
 ```
 
