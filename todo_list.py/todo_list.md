@@ -1,8 +1,34 @@
-# {{PROBLEM}} Multi-Class Planned Design Recipe
+# ToDo List Multi-Class Planned Design Recipe
 
 ## 1. Describe the Problem
 
-_Put or write the user story here. Add any clarifying notes you might have._
+As a user
+So that I can keep track of things I need to do
+I want to add a new todo to my todo list.
+
+As a user
+So that I know what still needs to be done
+I want to see a list of all incomplete todos.
+
+As a user
+So that I can see what I have already finished
+I want to see a list of all completed todos
+
+As a user
+So that I can mark work as finished
+I want to mark a todo as complete.
+
+As a user
+So that I can quickly finish everything when I stop working
+I want to mark all todos as complete at once.
+
+As a user
+So that I can represent a task I need to do
+I want to create a todo with a task description that starts as incomplete.
+
+As a user
+So that todos reflect real work to be done
+I want new todos to be incomplete by default.
 
 ## 2. Design the Class System
 
